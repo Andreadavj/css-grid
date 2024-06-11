@@ -1,3 +1,6 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
 body {
   background-color: rgba(0, 0, 0, 0.233);
   color: rgb(12, 12, 12);
@@ -28,61 +31,75 @@ footer {
   grid-template-columns: auto 80%;
   grid-template-rows: auto 80% auto;
 }
-.grid-item {
-  border: 1px solid chocolate;
-}
 
+
+/* grid */
+/* comienzo con header */
 .header {
   text-align: center;
   color: white;
-  background-color: rgba(6, 6, 63, 0.808);
+  background-color: rgba(26, 79, 129, 0.87);
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: small;
   padding: 5px;
 }
+/* temmino de header */
+
+/* comienzo con menu y flexbox */
 .menu {
   margin: 0;
+}
+.flex-container {
+  display: flexbox;
   flex: 1;
   text-align: left;
 }
 .flex-container h1 {
   font-size: medium;
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 .flex-container p {
   font-size: x-small;
-  font-family: "Roboto", sans-serif;
+  font-size: small;
   font-weight: 100;
   font-style: normal;
 }
-/* grid-item-header{
-    grid-area: header;
+span {
+  color: rgba(0, 0, 0, 0.233);
 }
-grid-item-menu{
-    grid-area: menu;
+/* comienzo main flexbox*/
+.container {
+  display: flex;
+  gap: 30px;
 }
-grid-item-main{
-    grid-area: main;
+ul {
+  list-style: none;
+  text-align: center;
 }
-grid-item-fooer{
-    grid-area: footer;
+li img {
+  width: 200px;
+  height: 200px;
 }
-.grid-container {
-    min-height: 100vh;
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "main menu menu"
-    "footer footer footer";
-
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto 1fr auto;
-
+.color-container {
+  background-color: white;
+  width: 200px;
 }
-.grid-item-{
+.texto2 {
     
-} */
+  padding: 3px;
+  background-color: rgba(26, 79, 129, 0.87);
+  width: 200px;
+}
+
+/* termino de main */
+/* comienzo de footer */
+.footer {
+  color: rgba(66, 63, 63, 0.521);
+  background-color: white;
+  font-size: small;
+  flex: 1;
+  text-align: center;
+}
