@@ -6,7 +6,7 @@ body {
   color: rgb(12, 12, 12);
   margin: 0 auto;
 }
-
+/* grid */
 header {
   grid-area: header;
 }
@@ -51,18 +51,18 @@ footer {
 .menu {
   margin: 0;
 }
-.flex-container {
+.grid-container {
   display: flexbox;
   flex: 1;
   text-align: left;
+  padding: 5px;
 }
-.flex-container h1 {
+.grid-container h1 {
   font-size: medium;
   font-weight: 300;
   font-style: normal;
 }
-.flex-container p {
-  font-size: x-small;
+.grid-container p {
   font-size: small;
   font-weight: 100;
   font-style: normal;
@@ -71,6 +71,39 @@ span {
   color: rgba(0, 0, 0, 0.233);
 }
 /* comienzo main flexbox*/
+
+.imagen1 {
+  grid-area: 1;
+
+  }
+  .imagen2 {
+  grid-area: 2;
+
+  }
+  .imagen3 {
+  grid-area: 3;
+  
+  }
+  .imagen4 {
+  grid-area: 4;
+  
+  }
+
+  .gallery {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    "1 2 3"
+    "4 ";
+    }
+
+
+
+
+.container-perfume{
+  display: grid;
+ 
+}
 .container {
   display: flex;
   gap: 30px;
@@ -87,9 +120,11 @@ li img {
   background-color: white;
   width: 200px;
 }
+div p{
+  margin: 0;
+}
 .texto2 {
-    
-  padding: 3px;
+  
   background-color: rgba(26, 79, 129, 0.87);
   width: 200px;
 }
