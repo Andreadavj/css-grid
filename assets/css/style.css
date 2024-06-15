@@ -25,25 +25,25 @@ footer {
   min-width: 100vh;
   display: grid;
   grid-template-areas:
-    "header header"
-    " menu main"
-    "footer footer";
-  grid-template-columns: auto 80%;
+    "header header header"
+    " menu main main"
+    "footer footer footer";
+  grid-template-columns: auto 80% auto;
   grid-template-rows: auto 80% auto;
 }
-
 
 /* grid */
 /* comienzo con header */
 .header {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
   background-color: rgba(26, 79, 129, 0.87);
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: small;
   padding: 5px;
+  font-weight: 300;
+  font-style: normal;
+  font-size: xx-large;
 }
 /* temmino de header */
 
@@ -51,11 +51,16 @@ footer {
 .menu {
   margin: 0;
 }
+
 .grid-container {
   display: flexbox;
   flex: 1;
   text-align: left;
   padding: 5px;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 .grid-container h1 {
   font-size: medium;
@@ -64,69 +69,51 @@ footer {
 }
 .grid-container p {
   font-size: small;
-  font-weight: 100;
+  font-weight: 300;
   font-style: normal;
+  font-size: medium;
+  padding: 10px;
 }
-span {
-  color: rgba(0, 0, 0, 0.233);
+p span {
+  color: rgba(26, 79, 129, 0.87);
+  font-weight: 200px;
+  font-style: normal;
+  font-size: medium;
 }
 /* comienzo main flexbox*/
-
-.imagen1 {
-  grid-area: 1;
-
-  }
-  .imagen2 {
-  grid-area: 2;
-
-  }
-  .imagen3 {
-  grid-area: 3;
-  
-  }
-  .imagen4 {
-  grid-area: 4;
-  
-  }
-
-  .gallery {
-    display: grid;
-    gap: 10px;
-    grid-template-areas:
-    "1 2 3"
-    "4 ";
-    }
-
-
-
-
-.container-perfume{
+main {
+  grid-area: main;
   display: grid;
- 
-}
-.container {
-  display: flex;
-  gap: 30px;
-}
-ul {
-  list-style: none;
-  text-align: center;
-}
-li img {
-  width: 200px;
-  height: 200px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px; /* Espacio entre las celdas */
+  margin-bottom: 20px;
+  padding: 2rem 5rem 6rem 5rem;
+  justify-items: center;
 }
 .color-container {
   background-color: white;
+  text-align: center;
   width: 200px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-div p{
+div img {
+  width: 200px;
+  height: 200px;
+}
+div p {
   margin: 0;
+  padding: 0;
 }
 .texto2 {
-  
   background-color: rgba(26, 79, 129, 0.87);
+  padding: 10px;
   width: 200px;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
 /* termino de main */
@@ -134,7 +121,10 @@ div p{
 .footer {
   color: rgba(66, 63, 63, 0.521);
   background-color: white;
-  font-size: small;
+  font-style: normal;
+  font-size: medium;
   flex: 1;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
